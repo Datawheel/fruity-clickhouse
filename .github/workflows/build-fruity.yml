@@ -33,7 +33,7 @@ jobs:
         docker build \
           -t ${{ env.GHCR_PATH }}:${{ env.VERSION }} \
           -t ${{ env.GHCR_PATH }}:latest \
-          -f ./fruity/Dockerfile
+          -f ./fruity/Dockerfile .
 
     - name: Push Docker image
       run: |

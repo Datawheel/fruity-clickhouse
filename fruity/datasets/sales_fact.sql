@@ -8,7 +8,10 @@ CREATE TABLE default.sales_fact
     `color_id` Int64,
     `duration` Float64,
     `units` Int64,
-    `amount` Int64
+    `amount` Int64,
+    `year_id` UInt16,
+    `quarter_id` String,
+    `month_id` UInt32
 )
 ENGINE = MergeTree
 ORDER BY date_id
